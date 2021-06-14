@@ -1,0 +1,58 @@
+2020-01-28T20:01:52.325Z INFO Ensure step 3 jar file s3://edu.umich.cis578/MapReduceClient.jar
+2020-01-28T20:01:52.396Z INFO StepRunner: Created Runner for step 3
+INFO startExec 'hadoop jar /mnt/var/lib/hadoop/steps/s-3DSXIBF5POB4P/MapReduceClient.jar wordcount s3://edu.umich.cis578/warandpeace.txt s3://edu.umich.cis578/output'
+INFO Environment:
+  PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/sbin:/opt/aws/bin
+  LESS_TERMCAP_md=[01;38;5;208m
+  LESS_TERMCAP_me=[0m
+  HISTCONTROL=ignoredups
+  LESS_TERMCAP_mb=[01;31m
+  AWS_AUTO_SCALING_HOME=/opt/aws/apitools/as
+  UPSTART_JOB=rc
+  LESS_TERMCAP_se=[0m
+  HISTSIZE=1000
+  HADOOP_ROOT_LOGGER=INFO,DRFA
+  JAVA_HOME=/etc/alternatives/jre
+  AWS_DEFAULT_REGION=us-east-2
+  AWS_ELB_HOME=/opt/aws/apitools/elb
+  LESS_TERMCAP_us=[04;38;5;111m
+  EC2_HOME=/opt/aws/apitools/ec2
+  TERM=linux
+  runlevel=3
+  LANG=en_US.UTF-8
+  AWS_CLOUDWATCH_HOME=/opt/aws/apitools/mon
+  MAIL=/var/spool/mail/hadoop
+  LESS_TERMCAP_ue=[0m
+  LOGNAME=hadoop
+  PWD=/
+  LANGSH_SOURCED=1
+  HADOOP_CLIENT_OPTS=-Djava.io.tmpdir=/mnt/var/lib/hadoop/steps/s-3DSXIBF5POB4P/tmp
+  _=/etc/alternatives/jre/bin/java
+  CONSOLETYPE=serial
+  RUNLEVEL=3
+  LESSOPEN=||/usr/bin/lesspipe.sh %s
+  previous=N
+  UPSTART_EVENTS=runlevel
+  AWS_PATH=/opt/aws
+  USER=hadoop
+  UPSTART_INSTANCE=
+  PREVLEVEL=N
+  HADOOP_LOGFILE=syslog
+  PYTHON_INSTALL_LAYOUT=amzn
+  HOSTNAME=ip-172-31-33-110
+  HADOOP_LOG_DIR=/mnt/var/log/hadoop/steps/s-3DSXIBF5POB4P
+  EC2_AMITOOL_HOME=/opt/aws/amitools/ec2
+  SHLVL=5
+  HOME=/home/hadoop
+  HADOOP_IDENT_STRING=hadoop
+INFO redirectOutput to /mnt/var/log/hadoop/steps/s-3DSXIBF5POB4P/stdout
+INFO redirectError to /mnt/var/log/hadoop/steps/s-3DSXIBF5POB4P/stderr
+INFO Working dir /mnt/var/lib/hadoop/steps/s-3DSXIBF5POB4P
+INFO ProcessRunner started child process 14400 :
+hadoop   14400  4500  0 20:01 ?        00:00:00 bash /usr/lib/hadoop/bin/hadoop jar /mnt/var/lib/hadoop/steps/s-3DSXIBF5POB4P/MapReduceClient.jar wordcount s3://edu.umich.cis578/warandpeace.txt s3://edu.umich.cis578/output
+2020-01-28T20:01:56.402Z INFO HadoopJarStepRunner.Runner: startRun() called for s-3DSXIBF5POB4P Child Pid: 14400
+INFO Synchronously wait child process to complete : hadoop jar /mnt/var/lib/hadoop/steps/s-3DSXIBF5...
+INFO waitProcessCompletion ended with exit code 0 : hadoop jar /mnt/var/lib/hadoop/steps/s-3DSXIBF5...
+INFO total process run time: 32 seconds
+2020-01-28T20:02:26.549Z INFO Step created jobs: job_1580223654764_0001
+2020-01-28T20:02:26.549Z INFO Step succeeded with exitCode 0 and took 32 seconds
